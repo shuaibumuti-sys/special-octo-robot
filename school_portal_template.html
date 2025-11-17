@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Portal - Fee Payment & Result Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+        }
+        header {
+            background: #003366 url('student-bg.png') center/cover no-repeat;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #003366;
+        }
+        form {
+            margin-top: 15px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #003366;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0055aa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="next-logo.png" alt="School Logo" style="width:100px;margin-bottom:10px;">
+        <h1>NEXT INTERNATIONAL SCHOOLS</h1>
+        <p>Pay School Fees | Check Results</p>
+        <p><strong>Address:</strong> Top Medical Road Tunga, Minna, Niger State</p>
+        <p><strong>Contact:</strong> 07058888775 | nextinternationalschool@gmail.com</p>
+    </header>
+
+    <div class="container">
+        <h2>School Fees Payment</h2>
+        <form>
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter student name" required />
+
+            <label>Class</label>
+            <select required>
+                <option value="">-- Select Class --</option>
+                <option>Nursery</option>
+                <option>Primary 1</option>
+                <option>Primary 2</option>
+                <option>Primary 3</option>
+                <option>Primary 4</option>
+                <option>Primary 5</option>
+                <option>Primary 6</option>
+                <option>JSS 1</option>
+                <option>JSS 2</option>
+                <option>JSS 3</option>
+                <option>SSS 1</option>
+                <option>SSS 2</option>
+                <option>SSS 3</option>
+            </select>
+
+            <label>Amount</label>
+            <input type="number" placeholder="Enter amount" required />
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Result Checker</h2>
+        <form>
+            <label>Student ID</label>
+            <input type="text" placeholder="Enter student ID" required />
+
+            <label>Term</label>
+            <select required>
+                <option value="">-- Select Term --</option>
+                <option>1st Term</option>
+                <option>2nd Term</option>
+                <option>3rd Term</option>
+            </select>
+
+            <label>Session</label>
+            <select required>
+                <option value="">-- Select Session --</option>
+                <option>2023/2024</option>
+                <option>2024/2025</option>
+                <option>2025/2026</option>
+            </select>
+
+            <button type="submit">Check Result</button>
+        </form>
+    </div>
+</body>
+</html>
